@@ -1,50 +1,118 @@
+/* General Body Styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #121212;
-  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Styles */
+header {
+  background: #232323;
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+}
+
+header .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  min-height: 100vh;
 }
 
-main {
-  max-width: 700px;
-  padding: 2rem;
-  background: #1e1e1e;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
   color: #7289da;
 }
 
+/* Main Content Styles */
+main {
+  padding: 3rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #7289da;
+  font-weight: 600;
+}
+
 h2 {
+  font-size: 1.8rem;
   color: #ffffff;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 p {
-  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 a {
   color: #00b0f4;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #007acc;
 }
 
 .links {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   gap: 1.5rem;
+}
+
+.links a {
+  background: #7289da;
+  color: #ffffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.links a:hover {
+  background: #5f73bc;
 }
 
 .back {
   display: inline-block;
   margin-top: 2rem;
+  color: #e0e0e0;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  color: #888;
+  font-size: 0.9rem;
 }
